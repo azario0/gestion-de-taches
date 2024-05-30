@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    -ms-word-break: break-all;
+    word-break: break-all;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 600px; /* Adjust width for better display */
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.nav button {
+    padding: 10px;
+    border: none;
+    background: #5cb85c;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 48%;
+}
+
+.nav button:hover {
+    background: #4cae4c;
+}
+
+.task-input {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#new-task {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+    height: auto; /* Allow textarea to resize vertically */
+    resize: vertical; /* Allow vertical resizing */
+}
+
+#new-task::placeholder {
+    color: #ccc;
+    font-style: italic;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    background: #5cb85c;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #4cae4c;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 10px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    word-wrap: break-word; /* Ensure long words break and wrap */
+    white-space: pre-wrap; /* Ensure white space is preserved and wraps */
+    overflow-wrap: break-word; /* Ensure text wraps correctly */
+    width: 100%;
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width */
+}
+
+ul li span {
+    flex-grow: 1; /* Allow the span to grow and wrap text properly */
+    word-wrap: break-word; /* Ensure long words break and wrap */
+    white-space: pre-wrap; /* Ensure white space is preserved and wraps */
+    overflow-wrap: break-word; /* Ensure text wraps correctly */
+}
+
+ul li .checkbox-group {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0; /* Prevent shrinking to keep checkboxes and labels aligned */
+}
+
+ul li .checkbox-group label {
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+ul li input[type="radio"] {
+    margin-right: 5px;
+}
+
+ul li button {
+    padding: 5px 10px;
+    border: none;
+    background: #d9534f;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    flex-shrink: 0; /* Prevent shrinking to keep button size consistent */
+}
+
+ul li button:hover {
+    background: #c9302c;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Organizer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Task Organizer</h1>
+        <div class="nav">
+            <button onclick="showTaskCreator()">Create Task</button>
+            <button onclick="showHistory()">History</button>
+        </div>
+        <div id="task-creator">
+            <div class="task-input">
+                <textarea id="new-task" placeholder="Enter a new task"></textarea>
+                <button onclick="addTask()">Add Task</button>
+            </div>
+            <ul id="task-list"></ul>
+        </div>
+        <div id="task-history" style="display: none;">
+            <ul id="history-list"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
